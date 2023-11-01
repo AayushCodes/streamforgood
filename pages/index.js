@@ -17,7 +17,7 @@ export default function index() {
       >
         <Header />
         <Flex
-          marginTop={"175px"}
+          marginTop={"150px"}
           flexDir={"column"}
           gap={"28px"}
           w={"622px"}
@@ -31,7 +31,7 @@ export default function index() {
           >
             Join web3 communities by streaming G$
           </Text>
-          <Flex gap={"30px"} marginTop={"75px"}>
+          <Flex gap={"30px"} marginTop={"50px"}>
             <Link href="./join">
               <Button
                 borderRadius={"7px"}
@@ -71,7 +71,7 @@ export default function index() {
             </Button>
             </Link>
           </Flex>
-          <NumCommunities />
+          <NumCommunities  />
         </Flex>
       </Flex>
     </>

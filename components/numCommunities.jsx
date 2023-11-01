@@ -32,7 +32,7 @@ export const NumCommunities = () => {
   return (
     <>
       <Text fontSize={"30px"} color={"white"} fontWeight={"extrabold"}>
-        Number of communities Created
+        Number of communities
       </Text>
       <Text fontSize={"30px"} color={"white"} fontWeight={"extrabold"}>
         {numCommunities}

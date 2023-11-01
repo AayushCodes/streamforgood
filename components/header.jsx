@@ -1,10 +1,29 @@
-import { Flex, Image, Text, Button, Link } from "@chakra-ui/react";
+import {
+  Flex,
+  Image,
+  Text,
+  Link,
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+} from "@chakra-ui/react";
 import { ConnectBtn } from "./custmbtn";
+import { useRouter } from "next/router";
+import { useState } from "react";
 
 export default function Header() {
   return (
     <>
-        <Flex h={"44px"} marginTop={"45px"} gap={"935px"}>
+      <Flex
+        h={"auto"}
+        w={"full"}
+        justifyContent={"space-between"}
+        px="40"
+        py="50"
+        align={"center"}
+        background={"rgba(0, 0, 0, 0.7)"}
+        textColor={"white"}
+      >
         <Link href="./">
           <Flex gap={"9px"} align={"center"}>
             <Image src={"glogo.png"} alt={"logo"} h={"20px"} />
@@ -14,9 +33,29 @@ export default function Header() {
               StreamForGood
             </Text>
           </Flex>
-          </Link>
-          <ConnectBtn />
-        </Flex>
+        </Link>
+        <Breadcrumb
+        fontSize={"20px"}
+          spacing="12px"
+          separator="|"
+        >
+          <BreadcrumbItem>
+            <BreadcrumbLink href="/">Home</BreadcrumbLink>
+          </BreadcrumbItem>
+
+          <BreadcrumbItem>
+            <BreadcrumbLink href="/create">Create</BreadcrumbLink>
+          </BreadcrumbItem>
+
+          <BreadcrumbItem>
+            <BreadcrumbLink href="/join">Join</BreadcrumbLink>
+          </BreadcrumbItem>
+          <BreadcrumbItem>
+            <BreadcrumbLink href="/dashboard">Dashboard</BreadcrumbLink>
+          </BreadcrumbItem>
+        </Breadcrumb>
+        <ConnectBtn />
+      </Flex>
     </>
   );
 }

@@ -37,7 +37,7 @@ export const ConnectBtn = () => {
                     onClick={openConnectModal}
                     size='md'
                     variant='unstyled'
-                    className='hover:bg-violet-600 hover:text-white p-3 flex items-center bg-transparent text-violet-600 border-2 border-violet-600 rounded-xl'
+                    className='hover:bg-gray-600 hover:text-white p-3 flex items-center bg-transparent text-violet-600 border-2 border-white rounded-xl'
                   >
                     Connect Wallet
                   </Button>
@@ -57,7 +57,7 @@ export const ConnectBtn = () => {
               return (
                 <div style={{ display: 'flex', gap: 12 }}>
                   <button
-                    className='text-white p-1.5 font-sans rounded-2xl border-2 border-violet-600 flex items-center'
+                    className='text-white p-1.5 font-sans rounded-2xl border-2 border-lime-400 flex items-center'
                     onClick={openChainModal}
                     style={{ display: 'flex', alignItems: 'center' }}
                     type='button'
@@ -85,7 +85,7 @@ export const ConnectBtn = () => {
                     {chain.name}
                   </button>
                   <button
-                    className='text-white p-1.5 rounded-2xl border-2 border-violet-600 flex items-center'
+                    className='text-white p-1.5 rounded-2xl border-2 border-yellow-200 flex items-center'
                     onClick={openAccountModal}
                     type='button'
                   >
