@@ -24,7 +24,7 @@ export function initFirebase() {
     databaseURL: "https://streamforgood-f8624-default-rtdb.firebaseio.com/",
     authDomain: process.env.AUTH,
     projectId: process.env.PROJ,
-    storageBucket: process.env.BUCKET,
+    storageBucket: "streamforgood-f8624.appspot.com",
     messagingSenderId: process.env.MESSENGER,
     appId: process.env.APP,
     measurementId: process.env.MEASUREMENT,

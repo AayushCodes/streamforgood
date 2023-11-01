@@ -202,12 +202,14 @@ export default function Dashboard() {
                   {ownedCommunities.map((_in) => {
                     return (
                       <Card
+                      minW={"500px"}
                         key={_in}
                         direction={{ base: "column", sm: "row" }}
                         overflow="hidden"
                         variant="outline"
                       >
                         <Image
+                        marginLeft={"10px"}
                           maxH={"200px"}
                           my={"auto"}
                           src={_in.image}
