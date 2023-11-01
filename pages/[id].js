@@ -248,7 +248,7 @@ export default function Community() {
                 >
                   <CardHeader>
                     <Heading size="xl">
-                      Oops! Looks like you're not a part of this community
+                      Oops! Looks like you are not a part of this community
                     </Heading>
                   </CardHeader>
                   <CardBody>
